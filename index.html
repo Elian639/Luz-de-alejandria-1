@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#162c25">
+
+    <meta name="description"
+          content="Ediciones Alejandría - Libros educativos, infantiles, técnicos y artísticos.">
+
+    <title>Ediciones Alejandría | Librería</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     SONIDO DE INICIO
+================================================== -->
+
+<audio id="sonidoInicio"
+       src="img/sonido-inicio.mp3"
+       preload="auto">
+</audio>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header class="header">
+
+    <a href="#inicio" class="logo">
+
+        <span class="logo-icon">📚</span>
+
+        <div class="logo-text">
+
+            <span>EDICIONES</span>
+
+            <strong>Alejandría</strong>
+
+        </div>
+
+    </a>
+
+
+    <nav class="nav">
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#catalogo">Catálogo</a>
+
+        <a href="#categorias">Categorías</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+
+    <button
+        class="cart-button"
+        id="cartButton"
+        aria-label="Abrir carrito">
+
+        🛒
+
+        <span id="cartCount">0</span>
+
+    </button>
+
+</header>
+
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<main>
+
+<section class="hero" id="inicio">
+
+    <div class="hero-overlay"></div>
+
+    <div class="contenedor hero-contenido">
+
+        <div class="hero-texto">
+
+            <span class="etiqueta">
+                EDICIONES ALEJANDRÍA
+            </span>
+
+            <h1>
+                Conocimiento que
+                <span>ilumina.</span>
+            </h1>
+
+            <p>
+                Libros para aprender, crear y descubrir.
+                Explorá nuestra colección de obras
+                educativas, infantiles, técnicas y artísticas.
+            </p>
+
+
+            <div class="hero-botones">
+
+                <a
+                    href="#catalogo"
+                    class="btn btn-principal">
+
+                    Explorar catálogo
+                    <span>→</span>
+
+                </a>
+
+
+                <a
+                    href="#categorias"
+                    class="btn btn-secundario">
+
+                    Ver categorías
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-decoracion">
+
+            <div class="libro-flotante libro-1">
+                📖
+            </div>
+
+            <div class="libro-flotante libro-2">
+                📚
+            </div>
+
+            <div class="libro-flotante libro-3">
+                ✨
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CATEGORÍAS
+================================================== -->
+
+<section
+    class="categories"
+    id="categorias">
+
+    <div class="contenedor">
+
+        <div class="section-title">
+
+            <span>
+                EXPLORÁ NUESTRAS COLECCIONES
+            </span>
+
+            <h2>
+                Encontrá tu próximo libro
+            </h2>
+
+            <p>
+                Elegí una categoría y descubrí
+                nuestras publicaciones.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <button
+                class="category-card"
+                data-categoria="educacion">
+
+                <span class="category-icon">🎓</span>
+
+                <h3>Educación</h3>
+
+                <p>
+                    Libros para aprender y enseñar.
+                </p>
+
+                <small>
+                    Explorar →
+                </small>
+
+            </button>
+
+
+            <button
+                class="category-card"
+                data-categoria="infantil">
+
+                <span class="category-icon">🧸</span>
+
+                <h3>Infantil</h3>
+
+                <p>
+                    Historias y propuestas para niños.
+                </p>
+
+                <small>
+                    Explorar →
+                </small>
+
+            </button>
+
+
+            <button
+                class="category-card"
+                data-categoria="enfermeria">
+
+                <span class="category-icon">🩺</span>
+
+                <h3>Enfermería</h3>
+
+                <p>
+                    Material de estudio y consulta.
+                </p>
+
+                <small>
+                    Explorar →
+                </small>
+
+            </button>
+
+
+            <button
+                class="category-card"
+                data-categoria="mecanica">
+
+                <span class="category-icon">🔧</span>
+
+                <h3>Mecánica</h3>
+
+                <p>
+                    Conocimientos técnicos y prácticos.
+                </p>
+
+                <small>
+                    Explorar →
+                </small>
+
+            </button>
+
+
+            <button
+                class="category-card"
+                data-categoria="hogar">
+
+                <span class="category-icon">🏠</span>
+
+                <h3>Hogar</h3>
+
+                <p>
+                    Ideas, consejos y conocimientos.
+                </p>
+
+                <small>
+                    Explorar →
+                </small>
+
+            </button>
+
+
+            <button
+                class="category-card"
+                data-categoria="arte">
+
+                <span class="category-icon">🎨</span>
+
+                <h3>Arte</h3>
+
+                <p>
+                    Creatividad, expresión y cultura.
+                </p>
+
+                <small>
+                    Explorar →
+                </small>
+
+            </button>
+
+
+            <button
+                class="category-card"
+                data-categoria="enciclopedias">
+
+                <span class="category-icon">📖</span>
+
+                <h3>Enciclopedias</h3>
+
+                <p>
+                    Conocimiento para toda la familia.
+                </p>
+
+                <small>
+                    Explorar →
+                </small>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CATÁLOGO
+================================================== -->
+
+<section
+    class="catalog"
+    id="catalogo">
+
+    <div class="contenedor">
+
+        <div class="section-title">
+
+            <span>
+                NUESTRA COLECCIÓN
+            </span>
+
+            <h2>
+                Libros destacados
+            </h2>
+
+            <p>
+                Explorá, compará y agregá tus libros
+                favoritos al carrito.
+            </p>
+
+        </div>
+
+
+        <div class="catalogo-controles">
+
+            <div class="search-box">
+
+                <span>🔎</span>
+
+                <input
+                    type="text"
+                    id="buscador"
+                    placeholder="Buscar un libro..."
+                    autocomplete="off">
+
+            </div>
+
+
+            <select id="filtroCategoria">
+
+                <option value="todos">
+                    Todas las categorías
+                </option>
+
+                <option value="educacion">
+                    Educación
+                </option>
+
+                <option value="infantil">
+                    Infantil
+                </option>
+
+                <option value="enfermeria">
+                    Enfermería
+                </option>
+
+                <option value="mecanica">
+                    Mecánica
+                </option>
+
+                <option value="hogar">
+                    Hogar
+                </option>
+
+                <option value="arte">
+                    Arte
+                </option>
+
+                <option value="enciclopedias">
+                    Enciclopedias
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div
+            id="catalogoLibros"
+            class="libros-grid">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     SOBRE EDICIONES ALEJANDRÍA
+================================================== -->
+
+<section class="about">
+
+    <div class="contenedor about-content">
+
+        <div class="about-decoration">
+            ✦
+        </div>
+
+        <span>
+            EDICIONES ALEJANDRÍA
+        </span>
+
+        <h2>
+            Una biblioteca para descubrir,
+            aprender y crear.
+        </h2>
+
+        <p>
+            Somos una editorial dedicada a acercar
+            libros y materiales de consulta para
+            estudiantes, docentes, profesionales,
+            familias y lectores de todas las edades.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CONTACTO
+================================================== -->
+
+<section
+    class="contact"
+    id="contacto">
+
+    <div class="contenedor">
+
+        <div class="section-title">
+
+            <span>
+                ESTAMOS PARA AYUDARTE
+            </span>
+
+            <h2>
+                Contactanos
+            </h2>
+
+            <p>
+                ¿Tenés alguna consulta sobre nuestros
+                libros o tu compra?
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <a
+                href="mailto:contacto@edicionesalejandria.com"
+                class="contact-card">
+
+                <span>✉️</span>
+
+                <strong>
+                    Email
+                </strong>
+
+                <small>
+                    Escribinos
+                </small>
+
+            </a>
+
+
+            <div class="contact-card">
+
+                <span>💳</span>
+
+                <strong>
+                    Mercado Pago
+                </strong>
+
+                <small>
+                    Pagá de forma segura
+                </small>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <span>📱</span>
+
+                <strong>
+                    Atención
+                </strong>
+
+                <small>
+                    Próximamente WhatsApp
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="footer">
+
+    <div class="contenedor footer-contenido">
+
+        <div>
+
+            <h3>
+                Ediciones Alejandría
+            </h3>
+
+            <p>
+                Libros que inspiran,
+                enseñan y acompañan.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                © 2026 Ediciones Alejandría
+            </p>
+
+            <p>
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==================================================
+     OVERLAY
+================================================== -->
+
+<div
+    id="cartOverlay"
+    class="cart-overlay">
+</div>
+
+
+
+<!-- ==================================================
+     CARRITO
+================================================== -->
+
+<aside
+    id="carrito"
+    class="carrito">
+
+    <div class="carrito-header">
+
+        <div>
+
+            <span>
+                TU COMPRA
+            </span>
+
+            <h2>
+                Mi carrito
+            </h2>
+
+        </div>
+
+        <button
+            id="cerrarCarrito"
+            aria-label="Cerrar carrito">
+
+            ✕
+
+        </button>
+
+    </div>
+
+
+    <div
+        id="carritoItems"
+        class="carrito-items">
+    </div>
+
+
+    <div class="carrito-footer">
+
+        <div class="carrito-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                $0
+            </strong>
+
+        </div>
+
+
+        <button
+            id="checkoutButton"
+            class="checkout-button">
+
+            💳 Pagar con Mercado Pago
+
+        </button>
+
+
+        <button
+            id="qrButton"
+            class="qr-button">
+
+            ▣ Pagar con QR
+
+        </button>
+
+
+        <small class="seguridad-pago">
+
+            🔒 Pago procesado de forma segura
+            por Mercado Pago.
+
+        </small>
+
+    </div>
+
+</aside>
+
+
+
+<!-- ==================================================
+     MODAL QR
+================================================== -->
+
+<div
+    id="qrModal"
+    class="modal">
+
+    <div class="modal-content">
+
+        <button
+            id="cerrarQr"
+            class="modal-close">
+
+            ✕
+
+        </button>
+
+        <span class="modal-icon">
+            ▣
+        </span>
+
+        <h2>
+            Pagá con QR
+        </h2>
+
+        <p>
+            Escaneá este código con
+            la aplicación de Mercado Pago.
+        </p>
+
+
+        <div
+            id="qrContainer"
+            class="qr-container">
+
+            <div class="qr-loading">
+                Generando QR...
+            </div>
+
+        </div>
+
+
+        <strong
+            id="qrTotal"
+            class="qr-total">
+        </strong>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     MERCADO PAGO SDK
+================================================== -->
+
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+
+
+<!-- PRODUCTOS -->
+
+<script src="productos/libros.js"></script>
+
+
+<!-- APP -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
