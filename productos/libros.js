@@ -269,4 +269,21 @@ Una propuesta ideal para compartir entre grandes y chicos, combinando lectura, e
     imagen: "img/enciclopedia-secundaria.jpg"
 
 },
+
+{
+    id: 17,
+
+    titulo: "Agenda",
+
+    categoria: "Hogar",
+
+    categoriaNombre: "Hogar",
+
+    descripcion: "Una agenda unica",
+
+    precio: 1200,
+
+    imagen: "img/agenda.png"
+
+},
 ];
